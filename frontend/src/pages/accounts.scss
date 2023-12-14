@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@800&family=Nunito:wght@400;600;900&family=Poppins:wght@800&family=Raleway:wght@400;600;800&family=Rubik:wght@300&display=swap');
+
+
+html{
+   
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #241468;
+    color: #DAFFFB;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+
+}

@@ -1,0 +1,210 @@
+.arthurs{
+    margin: auto;
+    padding: 40px;
+
+    h1{
+        font-weight: 900;
+       font-family: 'Raleway', sans-serif;
+       margin-top: 20px;
+        text-align: center;
+        font-size: 80px;
+        color: white;
+    }
+}
+
+.image-grid {
+    margin-left: 50px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.grid-item {
+    position: relative;
+    text-align: center;
+
+}
+
+.grid-item img {
+    border-radius: 40px;
+    max-width: 80%;
+    max-height: 100%;
+    width: 100%;
+    height: 90%;
+    transition: 0.1s all ease-in-out;
+    border: 2px solid #EA1179;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.87);
+}
+
+.grid-item img:hover{
+    transform: translateY(10px);
+}
+
+.overlay {
+    bottom: 100%;
+    border-radius: 40px 40px 0px 0px;
+    position: absolute;
+    top: 0;
+ 
+    width: 80%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: transparent;
+    display: block;
+    text-align: center;
+    align-items: center;
+    transition: 0.3s all ease-in-out;
+    
+}
+
+.grid-item:hover .overlay {
+    color: white;
+    background-color: #EA1179;
+    transform: translateY(-40%);
+    height: 10%;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .arthurs{
+        margin: auto;
+        padding: 40px;
+    
+        h1{
+            font-weight: 900;
+           font-family: 'Raleway', sans-serif;
+           margin-top: 20px;
+            text-align: center;
+            font-size: 80px;
+            color: white;
+        }
+    }
+    
+    .image-grid {
+        margin-left: 50px;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .grid-item {
+        position: relative;
+        text-align: center;
+    
+    }
+    
+    .grid-item img {
+        border-radius: 40px;
+        max-width: 80%;
+        max-height: 100%;
+        width: 100%;
+        height: 90%;
+        transition: 0.1s all ease-in-out;
+        border: 2px solid #EA1179;
+        box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.87);
+    }
+    
+    .grid-item img:hover{
+        transform: translateY(10px);
+    }
+    
+    .overlay {
+        bottom: 100%;
+        border-radius: 40px 40px 0px 0px;
+        position: absolute;
+        top: 0;
+     
+        width: 80%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: transparent;
+        display: block;
+        text-align: center;
+        align-items: center;
+        transition: 0.3s all ease-in-out;
+        
+    }
+    
+    .grid-item:hover .overlay {
+        color: white;
+        background-color: #EA1179;
+        transform: translateY(-15%);
+        height: 10%;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .arthurs{
+
+
+        padding: 20px;
+    
+        h1{
+
+            font-weight: 900;
+           font-family: 'Raleway', sans-serif;
+
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+    }
+    
+    .image-grid {
+      margin-top: 10px;
+       margin-left: -.5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .grid-item {
+        position: relative;
+        text-align: center;
+    
+    }
+    
+    .grid-item img {
+        border-radius: 40px;
+        max-width: 80%;
+        max-height: 100%;
+        width: 100%;
+        height: 90%;
+        transition: 0.1s all ease-in-out;
+        border: 2px solid #EA1179;
+        box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.87);
+    }
+    
+    .grid-item img:hover{
+        transform: translateY(10px);
+    }
+    
+    .overlay {
+        bottom: 100%;
+        border-radius: 40px 40px 0 0;
+        position: absolute;
+        top: 0;
+     
+        width: 80%;
+        height: 120%;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: transparent;
+
+        text-align: center;
+        align-items: center;
+        transition: 0.3s all ease-in-out;
+        
+    }
+    
+    .grid-item:hover .overlay {
+        color: white;
+        background-color: #EA1179;
+        transform: translateY(-1px);
+        height: 10%;
+    }
+}

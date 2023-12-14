@@ -1,0 +1,135 @@
+// app.post('/updateLocation', async (req, res) => {
+//   console.log('ma a gya');
+//   try {
+//     const { userId, newLocation } = req.body;
+
+//     if (!userId || !newLocation) {
+      
+//       return res.status(400).json({ error: 'Invalid request payload' });
+//     }
+
+//     const user = await User.findById(userId);
+
+//     if (!user) {
+//       return res.status(404).json({ error: 'User not found' });
+//     }
+
+//     // Update the user's location
+//     user.locations.push(newLocation);
+//     await user.save();
+
+//     res.status(200).json({ message: 'Location updated successfully' });
+//   } catch (error) {
+//     console.error('Error updating location:', error);
+//     res.status(500).json({ error: 'Error updating location' });
+//   }
+// });
+  
+
+// app.post('/updateLocation', async (req, res) => {
+//   console.log('a ja');
+  // try {
+  //   const { location } = req.body;
+
+  //   // For simplicity, let's assume a default username or a specific logic for managing users without usernames
+  //   const defaultUsername = 'defaultUser';
+
+  //   // Find the user by username or create a new user with the default username
+  //   const user = await User.findOneAndUpdate(
+  //     { username: defaultUsername },
+  //     { $push: { locations: location } },
+  //     { new: true, upsert: true }
+  //   );
+
+  //   res.status(200).json({ message: 'Location added successfully', user });
+  // } catch (error) {
+  //   res.status(500).json({ error: 'Error updating location' });
+  // }
+// });
+
+
+app.post('/updateLocation', async (req, res) => {
+  try {
+    const { location } = req.body;
+    
+    const newUser = new User({ locations: [location] });
+    res.status(201).json({ message: 'Location Saved' });
+  } catch (error) {
+    res.status(500).json({ error: 'Location not saved' });
+  }
+});
+
+
+
+
+
+
+app.get('/getLoggedInUserId', async (req, res) => {
+  try {
+    const token = req.headers.authorization; 
+
+    if (!token) {
+      return res.status(401).json({ error: 'Unauthorized - Token missing' });
+    }
+
+    const decodedToken = jwt.verify(token, SECRET_KEY);
+    const userId = decodedToken.userId;
+
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    res.status(200).json({ userId: user._id, username: user.username }); // Adjust based on your user schema
+  } catch (error) {
+    console.error('Error fetching logged-in user:', error);
+    res.status(500).json({ error: 'Error fetching logged-in user' });
+  }
+});
+
+
+
+
+
+
+
+
+
+// this is not trash 
+app.post('/updateLocation', async (req, res) => {
+  try {
+    const { location } = req.body;
+    
+    const newUser = new User({ locations: [ location ] });
+    res.status(201).json({ message: 'Location Saved' });
+  } catch (error) {
+    res.status(500).json({ error: 'Location not saved' });
+  }
+});
+
+
+
+const handleSubmit = async (event) => {
+  event.preventDefault();
+
+
+  const userToken = 'secretkey';
+
+  if (location !== null && userToken) {
+    try {
+      await axios.post('http://localhost:3001/updateLocation', {
+        location,
+        token: userToken, 
+      });
+
+      alert('Location successfully added');
+    } catch (error) {
+      console.log('Unable to add location:', error);
+      alert('Unable to add location');
+    }
+  }
+};
+
+onSubmit={handleSubmit}

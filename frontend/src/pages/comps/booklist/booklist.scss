@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Rajdhani:wght@700&family=Raleway:wght@900&display=swap');
+
+
+body{
+    height: 100vh;
+}
+.bg {
+    height: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+
+
+
+    .main {
+
+
+
+        h1 {
+            font-weight: 900;
+            font-family: 'Raleway', sans-serif;
+            padding: 30px;
+            
+            font-size: 80px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .crsl {
+            cursor: grab;
+            overflow: hidden;
+            margin: 0 20%;
+            margin-top: 8%;
+
+            .inner-crsl {
+
+                .item {
+                    display: flex;
+
+                    padding: 20px;
+                    gap: 30px;
+
+
+
+
+
+
+                    .card {
+                        height: 400px;
+                        min-width: 310px;
+                        background: transparent;
+                        backdrop-filter: blur(15px);
+                        -webkit-backdrop-filter: blur(15px);
+                        border: 2px solid rgba(225, 225, 225, 0.18);
+                        border-radius: 40px;
+                        padding: 40px;
+                        box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.87);
+                        text-align: center;
+
+                        .title {
+                            font-size: 24px;
+                            margin: 10px 0;
+                        }
+
+                        .publish-date {
+                            font-size: 14px;
+                            color: #666;
+                        }
+
+                        .description {
+                            color: white;
+                            font-size: 12px;
+                            margin-top: 20px;
+                        }
+
+                        .card-button {
+                            margin-top: 20px;
+                            text-decoration: none;
+                            background: none;
+                            color: white;
+
+                            padding: 10px 26px;
+                            letter-spacing: 1px;
+                            font-size: 18px;
+                            border: 1px solid #ffffff;
+                            border-radius: 40px;
+                            transition: all 0.6s ease;
+
+
+                        }
+
+                        .card-button:hover {
+                            color: #9F0D7F;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+    .box1{
+        text-align: center;
+        display: flex;
+        color: #9F0D7F;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 800;
+        border-radius: 10px;
+        margin-left: 90px;
+        margin-top: 40px;
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+        background-color: rgba(225, 225, 225, .9);
+    
+    }
+
+ 
+
+    .modal-backdrop {
+        padding: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .2);
+        backdrop-filter: blur(15px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+
+
+    .modal-content {
+        text-align: center;
+        background-color: transparent;
+        background: transparent;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 2px solid rgba(225, 225, 225, 0.18);
+        border-radius: 40px;
+        padding: 40px;
+        box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.87);
+        border-radius: 20px;
+        
+        h2{
+            font-size: 80px;
+        }
+
+        .modal-author-name{
+            margin-top: 10px;
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        .modal-publish-date{
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .modal-description{
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: 300;
+        }
+    
+    
+    
+    
+    
+    
+    
+    }
+
+    .modal-close-button {
+        margin-top: 30px;
+        text-decoration: none;
+        background: none;
+        color: white;
+
+        padding: 10px 26px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        border: 1px solid #ffffff;
+        border-radius: 30px;
+        transition: all 0.6s ease;
+    }
+
+    .modal-close-button:hover{
+        color: #9F0D7F;
+        border-radius: 50px;
+    }
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .bg {
+        height: 100%;
+        background-image: url(bg.jpg);
+        background-size: cover;
+    
+    
+    
+        .main {
+    
+    
+    
+            h1 {
+                font-weight: 900;
+                font-family: 'Raleway', sans-serif;
+                padding: 30px;
+                
+                font-size: 80px;
+                text-align: center;
+                color: #fff;
+            }
+    
+            .crsl {
+                cursor: grab;
+                overflow: hidden;
+                margin: 0 10%;
+                margin-top: 8%;
+    
+                .inner-crsl {
+    
+                    .item {
+                        display: flex;
+    
+                        padding: 20px;
+                        gap: 30px;
+    
+    
+    
+    
+    
+    
+                        .card {
+                            height: 400px;
+                            min-width: 285px;
+                            background: transparent;
+                            backdrop-filter: blur(15px);
+                            -webkit-backdrop-filter: blur(15px);
+                            border: 2px solid rgba(225, 225, 225, 0.18);
+                            border-radius: 40px;
+                            padding: 40px;
+                            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.87);
+                            text-align: center;
+    
+                            .title {
+                                font-size: 24px;
+                                margin: 10px 0;
+                            }
+    
+                            .publish-date {
+                                font-size: 14px;
+                                color: #666;
+                            }
+    
+                            .description {
+                                color: white;
+                                font-size: 10px;
+                                margin-top: 10px;
+                            }
+    
+                            .card-button {
+                                margin-top: 20px;
+                                text-decoration: none;
+                                background: none;
+                                color: white;
+    
+                                padding: 10px 26px;
+                                letter-spacing: 1px;
+                                font-size: 18px;
+                                border: 1px solid #ffffff;
+                                border-radius: 40px;
+                                transition: all 0.6s ease;
+    
+    
+                            }
+    
+                            .card-button:hover {
+                                color: #9F0D7F;
+                            }
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    .movingbox{
+        max-width: 1020px;
+        .box1{
+            text-align: center;
+            display: flex;
+            color: #9F0D7F;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 10px;
+            margin-left: 90px;
+            margin-top: 40px;
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            background-color: rgba(225, 225, 225, .9);
+        
+        }
+
+    }
+    
+     
+    
+        .modal-backdrop {
+            padding: 80px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .2);
+            backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+    
+    
+    
+        .modal-content {
+            text-align: center;
+            background-color: transparent;
+            background: transparent;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 2px solid rgba(225, 225, 225, 0.18);
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.87);
+            border-radius: 20px;
+            
+            h2{
+                font-size: 80px;
+            }
+    
+            .modal-author-name{
+                margin-top: 10px;
+                font-size: 40px;
+                font-weight: 400;
+            }
+    
+            .modal-publish-date{
+                margin-top: 10px;
+                font-size: 30px;
+                font-weight: 400;
+            }
+    
+            .modal-description{
+                margin-top: 20px;
+                font-size: 40px;
+                font-weight: 300;
+            }
+        
+        
+        
+        
+        
+        
+        
+        }
+    
+        .modal-close-button {
+            margin-top: 30px;
+            text-decoration: none;
+            background: none;
+            color: white;
+    
+            padding: 10px 26px;
+            letter-spacing: 1px;
+            font-size: 18px;
+            border: 1px solid #ffffff;
+            border-radius: 30px;
+            transition: all 0.6s ease;
+        }
+    
+        .modal-close-button:hover{
+            color: #9F0D7F;
+            border-radius: 50px;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bg {
+        margin-top: -20%;
+        width: 100%;
+        height: 70%;
+
+
+        .main {
+          h1 {
+            
+            
+            
+            font-weight: 900;
+            font-family: 'Raleway', sans-serif;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+          }
+      
+          .crsl {
+            cursor: grab;
+            overflow-x: auto;
+      
+            .inner-crsl {
+              .item {
+                display: flex;
+                padding: 20px;
+                gap: 30px;
+      
+                .card {
+                   min-width: 240px; 
+                  height: 400px;
+                  
+                  background: transparent;
+                  backdrop-filter: blur(15px);
+                  -webkit-backdrop-filter: blur(15px);
+                  border: 2px solid rgba(225, 225, 225, 0.18);
+                  border-radius: 40px;
+                  padding: 40px;
+                  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.87);
+                  text-align: center;
+      
+                  .title {
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin-top: -20px;
+                  }
+      
+                  .publish-date {
+                    font-size: 14px;
+                    color: #666;
+                    margin-top: -5px;
+                  }
+      
+                  .description {
+                    color: white;
+                    font-size: 10px;
+                    margin-top: 2px;
+                  }
+      
+                  .card-button {
+                    margin-top: 10px;
+                    text-decoration: none;
+                    background: none;
+                    color: white;
+                    padding: 10px 26px;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    border: 1px solid #ffffff;
+                    border-radius: 40px;
+                    transition: all 0.6s ease;
+      
+                    &:hover {
+                      color: #9F0D7F;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      
+        .movingbox {
+            display: none;
+            max-width: 100%;
+      
+          .box1 {
+            margin-left: 0;
+            text-align: center;
+            display: flex;
+            color: #9F0D7F;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 10px;
+
+            margin-top: 40px;
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            background-color: rgba(225, 225, 225, .9);
+          }
+        }
+      
+        .modal-backdrop {
+          padding: 80px;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, .2);
+          backdrop-filter: blur(15px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 100;
+        }
+      
+        .modal-content {
+          text-align: center;
+          background-color: transparent;
+          backdrop-filter: blur(15px);
+          -webkit-backdrop-filter: blur(15px);
+          border: 2px solid rgba(225, 225, 225, 0.18);
+          border-radius: 40px;
+          padding: 40px;
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.87);
+          border-radius: 20px;
+      
+          h2 {
+            font-size: 40px;
+          }
+      
+          .modal-author-name {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 300;
+          }
+      
+          .modal-publish-date {
+            margin-top: 10px;
+            font-size: 10px;
+            font-weight: 400;
+          }
+      
+          .modal-description {
+            margin-top: 20px;
+            font-size: 10px;
+            font-weight: 300;
+          }
+        }
+      
+        .modal-close-button {
+          margin-top: 30px;
+          text-decoration: none;
+          background: none;
+          color: white;
+          padding: 10px 26px;
+          letter-spacing: 1px;
+          font-size: 18px;
+          border: 1px solid #ffffff;
+          border-radius: 30px;
+          transition: all 0.6s ease;
+      
+          &:hover {
+            color: #9F0D7F;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+
